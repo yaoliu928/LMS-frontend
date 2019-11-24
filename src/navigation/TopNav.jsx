@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+import './styles/top-nav.scss'
 const TopNav = () => {
     return (
         <div>
-            <Link to="/courses">Courses</Link>
-            <Link to="/students">Students</Link>
-            <Link to="/lecturers">Lecturers</Link>
+            <NavLink to="/courses" activeClassName="top-nav--active">Courses</NavLink>
+            <NavLink to="/students" activeClassName="top-nav--active">Students</NavLink>
+            <NavLink to="/lecturers" activeClassName="top-nav--active">Lecturers</NavLink>
         </div>
     )
 };
